@@ -1,0 +1,35 @@
+# Landing page do PDV-Lev em www.syncrofin.com.br/pdv-lev
+# Subir/atualizar:  docker compose up -d --build
+# Passo a passo completo em DEPLOY.md.
+services:
+  pdv-lev-landing:
+    build: .
+    image: pdv-lev-landing:latest
+    container_name: pdv-lev-landing
+    restart: unless-stopped
+    # Porta so no localhost da VPS (nao fica exposta na internet). Serve para
+    # testar com curl e para proxy instalado direto no host (nginx/Caddy fora
+    # do Docker). Se 8090 ja estiver em uso, troque o numero da esquerda.
+    ports:
+      - "127.0.0.1:8090:80"
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+    # --- Proxy em container (Traefik, Nginx Proxy Manager, Caddy, nginx) ---
+    # Descomente e troque NOME_DA_REDE pela rede do proxy (ver DEPLOY.md, passo 1).
+    # networks:
+    #   - default
+    #   - proxy
+    # --- So se o proxy for Traefik: descomente tambem estas labels ---
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.docker.network=NOME_DA_REDE
+    #   - traefik.http.routers.pdvlev.rule=Host(`www.syncrofin.com.br`) && PathPrefix(`/pdv-lev`)
+    #   - traefik.http.routers.pdvlev.entrypoints=websecure
+    #   - traefik.http.routers.pdvlev.tls.certresolver=NOME_DO_RESOLVER
+    #   - traefik.http.services.pdvlev.loadbalancer.server.port=80
+
+# networks:
+#   proxy:
+#     external: true
+#     name: NOME_DA_REDE
