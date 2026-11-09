@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCP-Lev — Sistema de controle de produção</title>
+<meta name="description" content="PCP-Lev: planejamento e controle da produção com rastreabilidade ponta a ponta, recebimento fiscal por XML, Kanban de produção, custo real por ordem e painéis por setor.">
+<meta name="theme-color" content="#3d6b8a">
+<link rel="stylesheet" href="estilos.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%233d6b8a'%3E%3Cpath fill-rule='evenodd' d='M4 58V33l12-8v8l12-8v8l12-8v8h5V12h9v46H4Zm6-16v6h6v-6h-6Zm12 0v6h6v-6h-6Zm12 0v6h6v-6h-6Z'/%3E%3Ccircle cx='54' cy='7' r='3.2'/%3E%3Ccircle cx='59.5' cy='3.5' r='2.2'/%3E%3Crect x='2' y='59' width='60' height='3' rx='1'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 64 64"><path fill="currentColor" fill-rule="evenodd" d="M4 58V33l12-8v8l12-8v8l12-8v8h5V12h9v46H4Zm6-16v6h6v-6h-6Zm12 0v6h6v-6h-6Zm12 0v6h6v-6h-6Z"/><circle fill="currentColor" cx="54" cy="7" r="3.2"/><circle fill="currentColor" cx="59.5" cy="3.5" r="2.2"/><rect fill="currentColor" x="2" y="59" width="60" height="3" rx="1"/></symbol>
+</svg>
+
+<header class="topo">
+  <div class="conteiner">
+    <a class="marca" href="#inicio"><svg aria-hidden="true"><use href="#logo"/></svg>PCP-Lev</a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#fluxo">Fluxo</a>
+      <a href="#destaques">Destaques</a>
+      <a href="#telas">Telas</a>
+      <a href="#tecnologia">Tecnologia</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="abertura" id="inicio">
+  <div class="conteiner principal">
+    <div>
+      <p class="selo">Planejamento e controle da produção</p>
+      <h1>PCP-Lev — <span>Sistema de controle de produção</span></h1>
+      <p class="lead">Da necessidade de compra à entrega ao cliente, em um único sistema web: compras, recebimento fiscal, estoque por lote, produção visual, qualidade e indicadores — com rastreabilidade completa de cada peça.</p>
+      <div class="acoes">
+        <a class="botao primario" href="#diferenciais">Conhecer os diferenciais</a>
+        <a class="botao secundario" href="#telas">Ver as telas</a>
+      </div>
+    </div>
+    <a class="vitrine" href="img/telas/72-painel-inicial.webp" aria-label="Ampliar o painel inicial">
+      <div class="barra" aria-hidden="true"><i></i><i></i><i></i></div>
+      <img src="img/miniaturas/72-painel-inicial.webp" alt="Painel inicial do PCP-Lev com indicadores do dia" width="640" height="400">
+    </a>
+  </div>
+  <div class="conteiner">
+    <div class="numeros">
+      <div><strong>Ponta a ponta</strong><span>da nota fiscal ao produto entregue</span></div>
+      <div><strong>5 painéis</strong><span>por setor, com modo TV</span></div>
+      <div><strong>73 permissões</strong><span>granulares por perfil e usuário</span></div>
+      <div><strong>72 telas</strong><span>apresentadas nesta página</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" id="diferenciais" aria-labelledby="t-diferenciais">
+  <div class="conteiner">
+    <p class="sobretitulo">Diferenciais</p>
+    <h2 id="t-diferenciais">Feito para quem precisa de controle, não de planilhas</h2>
+    <p class="intro">O PCP-Lev reúne em um só lugar o que normalmente fica espalhado entre planilhas, e-mails e sistemas desconectados — e mantém o histórico de tudo.</p>
+    <div class="cartoes">
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h4a4 4 0 0 1 4 4v5M6 9v9"/></svg></div>
+        <h3>Rastreabilidade ponta a ponta</h3>
+        <p>Cada produto fabricado tem sua ficha <em>as-built</em>: quais componentes, de quais lotes, de quais notas fiscais e fornecedores. O caminho inverso também: de um lote, chega-se a todos os produtos que o usaram.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 15l2 2 4-4"/></svg></div>
+        <h3>Recebimento fiscal pelo XML</h3>
+        <p>Importe o XML da NF-e, confira item a item e efetive. O sistema vincula a nota ao pedido de compra, aponta divergências e dá entrada no estoque já gerando os lotes.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="10" rx="1"/><rect x="17" y="4" width="4" height="13" rx="1"/></svg></div>
+        <h3>Produção visual em Kanban</h3>
+        <p>Ordens de produção organizadas por etapa, com validações em cada passagem, registro de testes, apontamento de horas por centro de trabalho e conclusão com laudos anexados.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Custo real por ordem</h3>
+        <p>O custo de cada ordem concluída é apurado pelos lotes efetivamente consumidos, ao preço da nota de entrada — não por estimativa. Margens e decisões com base em números reais.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+        <h3>Painéis por setor e modo TV</h3>
+        <p>Indicadores de compras, estoque, produção, vendas e qualidade, com período ajustável, atualização automática, tabela equivalente a cada gráfico e modo TV para monitores no chão de fábrica.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Segurança e acesso granular</h3>
+        <p>Perfis com permissões detalhadas por módulo e ação, exceções individuais com justificativa, bloqueio por tentativas, sessões revogáveis na hora e segredos guardados de forma cifrada.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M8 11h6M11 8v6"/></svg></div>
+        <h3>Auditoria completa</h3>
+        <p>Toda inclusão, alteração e exclusão fica registrada com usuário, data e a comparação campo a campo entre o antes e o depois. Nada se perde, nada se altera sem deixar rastro.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.4 11.1 12.2 20.3a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.2a2 2 0 0 1-2.8-2.8l8.5-8.5"/></svg></div>
+        <h3>Documentos com validade</h3>
+        <p>Fotos, desenhos, laudos, certificados e contratos anexados a peças, ordens e fornecedores — com alerta de tudo que está para vencer, incluindo a calibração dos instrumentos.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><rect x="2" y="9" width="20" height="9" rx="2"/><path d="M6 14h12v8H6z"/></svg></div>
+        <h3>Impressão e PDF em todas as telas</h3>
+        <p>Qualquer tela pode ser impressa ou salva em PDF com cabeçalho da empresa, usuário e data — gráficos incluídos, ajustados à folha.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18"/></svg></div>
+        <h3>Conforto e acessibilidade</h3>
+        <p>Temas claro, escuro e alto contraste, tamanho de fonte ajustável, navegação por teclado, ajuda contextual em todas as telas e formatos regionais de data e número configuráveis.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/><circle cx="7" cy="7" r=".5"/><circle cx="7" cy="12" r=".5"/><circle cx="7" cy="17" r=".5"/></svg></div>
+        <h3>Planejamento a partir da estrutura</h3>
+        <p>Estruturas de produto versionadas — em vários níveis, com submontagens que são outros produtos — alimentam o cálculo de necessidade de compra; em um clique, a necessidade vira cotação, a cotação vira pedido.</p>
+      </article>
+      <article class="cartao">
+        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="6" rx="1"/><rect x="2" y="14" width="20" height="6" rx="1"/><path d="M6 7h.01M6 17h.01"/></svg></div>
+        <h3>Implantação simples</h3>
+        <p>Roda em qualquer servidor com Docker, com HTTPS automático, banco atualizado sozinho a cada versão e rotina de backup e restauração documentada.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloco alt" id="fluxo" aria-labelledby="t-fluxo">
+  <div class="conteiner">
+    <p class="sobretitulo">Fluxo integrado</p>
+    <h2 id="t-fluxo">Um único caminho, do pedido à entrega</h2>
+    <p class="intro">Cada etapa alimenta a seguinte. O que entra pela nota fiscal é o mesmo que sai no produto — e tudo pode ser consultado depois.</p>
+    <ol class="fluxo">
+      <li><strong>Venda</strong><span>Pedido do cliente define o que produzir e quando.</span></li>
+      <li><strong>Planejamento</strong><span>Estrutura do produto e estoque calculam a necessidade.</span></li>
+      <li><strong>Compras</strong><span>Cotação, comparação de propostas e pedido de compra.</span></li>
+      <li><strong>Recebimento</strong><span>XML da NF-e, conferência e entrada por lote.</span></li>
+      <li><strong>Produção</strong><span>Kanban, testes, horas e consumo de lotes.</span></li>
+      <li><strong>Expedição</strong><span>Entrega com ficha <em>as-built</em> e custo real.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="bloco" id="destaques" aria-labelledby="t-destaques">
+  <div class="conteiner">
+    <p class="sobretitulo">Destaques</p>
+    <h2 id="t-destaques">O que faz diferença no dia a dia</h2>
+    <p class="intro">Algumas telas que mostram como o PCP-Lev resolve problemas comuns da produção.</p>
+
+    <div class="destaque">
+      <div>
+        <h3>Saiba de onde veio cada componente</h3>
+        <p>A ficha de rastreabilidade reúne, para cada unidade produzida, os componentes, lotes, fornecedores e notas fiscais de origem — além dos laudos de teste.</p>
+        <ul><li>Rastreio direto e inverso por lote</li><li>Laudos e documentos na própria ficha</li><li>Resposta imediata a auditorias e reclamações</li></ul>
+      </div>
+      <a class="quadro" href="img/telas/57-rastreabilidade.webp" data-legenda="Rastreabilidade (as-built) — ficha do produto com cada componente, lote, fornecedor e nota de origem."><img src="img/miniaturas/57-rastreabilidade.webp" alt="Ficha de rastreabilidade de um produto" loading="lazy" width="640" height="400"></a>
+    </div>
+
+    <div class="destaque inverso">
+      <div>
+        <h3>Recebimento sem redigitação</h3>
+        <p>O XML da nota fiscal é importado e vinculado ao pedido de compra. A conferência física aponta faltas e sobras antes de qualquer movimento no estoque.</p>
+        <ul><li>Prévia completa antes de gravar</li><li>Efetivação atômica: estoque e lotes juntos</li><li>Kardex e origem do saldo sempre consistentes</li></ul>
+      </div>
+      <a class="quadro" href="img/telas/59-importar-xml-previa.webp" data-legenda="Importação do XML da NF-e — prévia da nota com fornecedor, itens e vínculo automático ao pedido de compra."><img src="img/miniaturas/59-importar-xml-previa.webp" alt="Prévia de importação do XML de nota fiscal" loading="lazy" width="640" height="400"></a>
+    </div>
+
+    <div class="destaque">
+      <div>
+        <h3>A produção à vista de todos</h3>
+        <p>O Kanban mostra cada ordem na sua etapa. Avançar exige o que a etapa pede — testes registrados, materiais consumidos — e o sistema calcula o custo real ao concluir.</p>
+        <ul><li>Etapas com validação</li><li>Horas por centro de trabalho</li><li>Custo apurado pelos lotes consumidos</li></ul>
+      </div>
+      <a class="quadro" href="img/telas/54-kanban.webp" data-legenda="Kanban de produção — ordens organizadas por etapa."><img src="img/miniaturas/54-kanban.webp" alt="Kanban de ordens de produção" loading="lazy" width="640" height="400"></a>
+    </div>
+
+    <div class="destaque inverso">
+      <div>
+        <h3>Indicadores para cada setor</h3>
+        <p>Cada área tem o seu painel, liberado por permissão. Gráficos acompanhados de tabela equivalente, período ajustável e modo TV com atualização automática.</p>
+        <ul><li>Compras, estoque, produção, vendas e qualidade</li><li>Lead time, OTD, taxa de aprovação, itens críticos</li><li>Impressão e PDF com os gráficos ajustados</li></ul>
+      </div>
+      <a class="quadro" href="img/telas/75-painel-producao.webp" data-legenda="Painel de produção — ordens por etapa, concluídas por semana, lead time e horas por centro de trabalho."><img src="img/miniaturas/75-painel-producao.webp" alt="Painel de indicadores de produção" loading="lazy" width="640" height="400"></a>
+    </div>
+  </div>
+</section>
+
+<section class="bloco alt" id="telas" aria-labelledby="t-telas">
+  <div class="conteiner">
+    <p class="sobretitulo">Telas do sistema</p>
+    <h2 id="t-telas">Conheça o PCP-Lev por dentro</h2>
+    <p class="intro">72 telas organizadas por módulo. Clique em qualquer imagem para ampliar; use as setas do teclado para navegar.</p>
+<nav class="filtros" aria-label="Módulos da galeria">
+<a href="#g-acesso">Acesso e identidade visual <span>4</span></a>
+<a href="#g-cadastros">Cadastros <span>13</span></a>
+<a href="#g-engenharia">Estrutura de produto e necessidades <span>5</span></a>
+<a href="#g-compras">Compras <span>7</span></a>
+<a href="#g-recebimento">Recebimento fiscal e estoque <span>10</span></a>
+<a href="#g-producao">Produção e qualidade <span>6</span></a>
+<a href="#g-documentos">Documentos e anexos <span>5</span></a>
+<a href="#g-paineis">Painéis e indicadores <span>7</span></a>
+<a href="#g-administracao">Segurança e administração <span>11</span></a>
+<a href="#g-preferencias">Acessibilidade e preferências <span>4</span></a>
+</nav>
+<section class="grupo" id="g-acesso" aria-labelledby="t-acesso">
+<h3 id="t-acesso">Acesso e identidade visual</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/01-login.webp" data-legenda="Tela de login — Entrada com a marca da empresa, bloqueio automático após tentativas inválidas e sessão revogável."><img src="img/miniaturas/01-login.webp" alt="Tela de login" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Tela de login</strong>Entrada com a marca da empresa, bloqueio automático após tentativas inválidas e sessão revogável.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/02-login-ajuda.webp" data-legenda="Ajuda contextual no login — Toda tela tem um painel de ajuda que explica campos, regras e próximos passos."><img src="img/miniaturas/02-login-ajuda.webp" alt="Ajuda contextual no login" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ajuda contextual no login</strong>Toda tela tem um painel de ajuda que explica campos, regras e próximos passos.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/49-troca-senha-obrigatoria.webp" data-legenda="Troca de senha obrigatória — No primeiro acesso, ou quando o administrador redefine a senha, o usuário define a sua."><img src="img/miniaturas/49-troca-senha-obrigatoria.webp" alt="Troca de senha obrigatória" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Troca de senha obrigatória</strong>No primeiro acesso, ou quando o administrador redefine a senha, o usuário define a sua.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/39-dados-empresa-marca-no-login.webp" data-legenda="Marca da empresa no login — Logo e nome cadastrados aparecem no login, nos cabeçalhos e nas impressões."><img src="img/miniaturas/39-dados-empresa-marca-no-login.webp" alt="Marca da empresa no login" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Marca da empresa no login</strong>Logo e nome cadastrados aparecem no login, nos cabeçalhos e nas impressões.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-cadastros" aria-labelledby="t-cadastros">
+<h3 id="t-cadastros">Cadastros</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/05-fornecedores-lista.webp" data-legenda="Fornecedores — Lista com busca, ordenação e filtros; inativação preserva o histórico."><img src="img/miniaturas/05-fornecedores-lista.webp" alt="Fornecedores" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Fornecedores</strong>Lista com busca, ordenação e filtros; inativação preserva o histórico.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/06-fornecedores-novo.webp" data-legenda="Novo fornecedor — Formulário com validação de CNPJ, contatos e condições comerciais."><img src="img/miniaturas/06-fornecedores-novo.webp" alt="Novo fornecedor" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Novo fornecedor</strong>Formulário com validação de CNPJ, contatos e condições comerciais.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/07-fornecedores-editar.webp" data-legenda="Edição de fornecedor — Alterações ficam registradas na trilha de auditoria."><img src="img/miniaturas/07-fornecedores-editar.webp" alt="Edição de fornecedor" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Edição de fornecedor</strong>Alterações ficam registradas na trilha de auditoria.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/08-fornecedores-confirmar-inativacao.webp" data-legenda="Confirmação de inativação — Ações sensíveis sempre pedem confirmação explícita."><img src="img/miniaturas/08-fornecedores-confirmar-inativacao.webp" alt="Confirmação de inativação" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Confirmação de inativação</strong>Ações sensíveis sempre pedem confirmação explícita.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/09-fornecedores-ajuda.webp" data-legenda="Ajuda de fornecedores — Orientação passo a passo, sem sair da tela."><img src="img/miniaturas/09-fornecedores-ajuda.webp" alt="Ajuda de fornecedores" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ajuda de fornecedores</strong>Orientação passo a passo, sem sair da tela.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/10-partes-pecas-lista.webp" data-legenda="Partes e peças — Catálogo de componentes com estoque mínimo, unidade e controle por lote."><img src="img/miniaturas/10-partes-pecas-lista.webp" alt="Partes e peças" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Partes e peças</strong>Catálogo de componentes com estoque mínimo, unidade e controle por lote.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/11-partes-pecas-novo.webp" data-legenda="Nova peça — Cadastro com código, categoria, custo de referência e exigência de inspeção."><img src="img/miniaturas/11-partes-pecas-novo.webp" alt="Nova peça" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Nova peça</strong>Cadastro com código, categoria, custo de referência e exigência de inspeção.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/12-partes-pecas-ajuda.webp" data-legenda="Ajuda de partes e peças — Explica cada campo e como ele afeta compras e produção."><img src="img/miniaturas/12-partes-pecas-ajuda.webp" alt="Ajuda de partes e peças" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ajuda de partes e peças</strong>Explica cada campo e como ele afeta compras e produção.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/13-produtos-acabados-lista.webp" data-legenda="Produtos acabados — Itens fabricados, com estrutura vinculada e situação."><img src="img/miniaturas/13-produtos-acabados-lista.webp" alt="Produtos acabados" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Produtos acabados</strong>Itens fabricados, com estrutura vinculada e situação.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/14-produtos-acabados-novo.webp" data-legenda="Novo produto acabado — Cadastro simples, pronto para receber a estrutura de produto."><img src="img/miniaturas/14-produtos-acabados-novo.webp" alt="Novo produto acabado" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Novo produto acabado</strong>Cadastro simples, pronto para receber a estrutura de produto.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/15-produtos-acabados-ajuda.webp" data-legenda="Ajuda de produtos acabados — Como cadastrar e relacionar o produto à sua estrutura."><img src="img/miniaturas/15-produtos-acabados-ajuda.webp" alt="Ajuda de produtos acabados" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ajuda de produtos acabados</strong>Como cadastrar e relacionar o produto à sua estrutura.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/51-clientes.webp" data-legenda="Clientes — Base de clientes usada nos pedidos de venda e na expedição."><img src="img/miniaturas/51-clientes.webp" alt="Clientes" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Clientes</strong>Base de clientes usada nos pedidos de venda e na expedição.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/52-centros-trabalho.webp" data-legenda="Centros de trabalho — Postos e células de produção, usados no roteiro das ordens."><img src="img/miniaturas/52-centros-trabalho.webp" alt="Centros de trabalho" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Centros de trabalho</strong>Postos e células de produção, usados no roteiro das ordens.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-engenharia" aria-labelledby="t-engenharia">
+<h3 id="t-engenharia">Estrutura de produto e necessidades</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/29-estrutura-produtos-lista.webp" data-legenda="Estruturas de produto — Listas de materiais versionadas por produto."><img src="img/miniaturas/29-estrutura-produtos-lista.webp" alt="Estruturas de produto" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Estruturas de produto</strong>Listas de materiais versionadas por produto.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/30-estrutura-produtos-detalhe.webp" data-legenda="Detalhe da estrutura — Edite os componentes (peças ou submontagens) e a lista de versões, tudo numa tela."><img src="img/miniaturas/30-estrutura-produtos-detalhe.webp" alt="Detalhe da estrutura" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Detalhe da estrutura</strong>Componentes (peças ou outros produtos) e a lista de versões, na mesma tela.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/31-estrutura-produtos-form-nova-versao.webp" data-legenda="Versões da estrutura — Editar os componentes gera uma nova versão ativa; qualquer versão pode ser ativada ou desativada."><img src="img/miniaturas/31-estrutura-produtos-form-nova-versao.webp" alt="Versões da estrutura" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Versões da estrutura</strong>Salvar gera uma nova versão ativa; volte a uma anterior ativando-a, sem apagar nada.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/32-necessidade-compra-lista.webp" data-legenda="Necessidade de compra — Cálculo automático do que falta a partir de pedidos, estrutura e estoque."><img src="img/miniaturas/32-necessidade-compra-lista.webp" alt="Necessidade de compra" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Necessidade de compra</strong>Cálculo automático do que falta a partir de pedidos, estrutura e estoque.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/33-necessidade-compra-gerar-cotacao.webp" data-legenda="Cotação a partir da necessidade — Um clique gera a cotação já preenchida com itens e quantidades."><img src="img/miniaturas/33-necessidade-compra-gerar-cotacao.webp" alt="Cotação a partir da necessidade" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Cotação a partir da necessidade</strong>Um clique gera a cotação já preenchida com itens e quantidades.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-compras" aria-labelledby="t-compras">
+<h3 id="t-compras">Compras</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/17-cotacoes-lista.webp" data-legenda="Cotações — Acompanhamento das cotações por situação e fornecedor."><img src="img/miniaturas/17-cotacoes-lista.webp" alt="Cotações" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Cotações</strong>Acompanhamento das cotações por situação e fornecedor.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/18-cotacoes-novo.webp" data-legenda="Nova cotação — Itens, quantidades e fornecedores convidados."><img src="img/miniaturas/18-cotacoes-novo.webp" alt="Nova cotação" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Nova cotação</strong>Itens, quantidades e fornecedores convidados.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/19-cotacoes-detalhe-rascunho.webp" data-legenda="Cotação em rascunho — Edição livre até o envio aos fornecedores."><img src="img/miniaturas/19-cotacoes-detalhe-rascunho.webp" alt="Cotação em rascunho" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Cotação em rascunho</strong>Edição livre até o envio aos fornecedores.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/20-cotacoes-detalhe-respondida.webp" data-legenda="Cotação respondida — Comparação de preços e prazos para escolher a melhor proposta."><img src="img/miniaturas/20-cotacoes-detalhe-respondida.webp" alt="Cotação respondida" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Cotação respondida</strong>Comparação de preços e prazos para escolher a melhor proposta.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/21-pedidos-compra-lista.webp" data-legenda="Pedidos de compra — Pedidos emitidos, com situação de entrega e valores."><img src="img/miniaturas/21-pedidos-compra-lista.webp" alt="Pedidos de compra" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Pedidos de compra</strong>Pedidos emitidos, com situação de entrega e valores.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/22-pedidos-compra-novo.webp" data-legenda="Novo pedido de compra — Gerado a partir da cotação aprovada ou de forma direta."><img src="img/miniaturas/22-pedidos-compra-novo.webp" alt="Novo pedido de compra" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Novo pedido de compra</strong>Gerado a partir da cotação aprovada ou de forma direta.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/23-pedidos-compra-detalhe.webp" data-legenda="Detalhe do pedido de compra — Itens, saldos a receber e notas fiscais vinculadas."><img src="img/miniaturas/23-pedidos-compra-detalhe.webp" alt="Detalhe do pedido de compra" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Detalhe do pedido de compra</strong>Itens, saldos a receber e notas fiscais vinculadas.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-recebimento" aria-labelledby="t-recebimento">
+<h3 id="t-recebimento">Recebimento fiscal e estoque</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/59-importar-xml-previa.webp" data-legenda="Importação do XML da NF-e — Prévia da nota com fornecedor, itens e vínculo automático ao pedido de compra."><img src="img/miniaturas/59-importar-xml-previa.webp" alt="Importação do XML da NF-e" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Importação do XML da NF-e</strong>Prévia da nota com fornecedor, itens e vínculo automático ao pedido de compra.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/60-nota-conferida.webp" data-legenda="Nota conferida — Conferência física item a item, com divergências destacadas."><img src="img/miniaturas/60-nota-conferida.webp" alt="Nota conferida" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Nota conferida</strong>Conferência física item a item, com divergências destacadas.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/61-nota-efetivada.webp" data-legenda="Nota efetivada — A efetivação dá entrada no estoque e gera os lotes de forma atômica."><img src="img/miniaturas/61-nota-efetivada.webp" alt="Nota efetivada" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Nota efetivada</strong>A efetivação dá entrada no estoque e gera os lotes de forma atômica.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/66-notas-entrada.webp" data-legenda="Notas de entrada — Histórico das notas recebidas e sua situação."><img src="img/miniaturas/66-notas-entrada.webp" alt="Notas de entrada" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Notas de entrada</strong>Histórico das notas recebidas e sua situação.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/24-estoque-lista.webp" data-legenda="Estoque — Saldos por item com alerta de estoque mínimo."><img src="img/miniaturas/24-estoque-lista.webp" alt="Estoque" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Estoque</strong>Saldos por item com alerta de estoque mínimo.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/25-estoque-ajuste-modal.webp" data-legenda="Ajuste de saldo — Ajustes exigem justificativa e ficam no Kardex."><img src="img/miniaturas/25-estoque-ajuste-modal.webp" alt="Ajuste de saldo" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ajuste de saldo</strong>Ajustes exigem justificativa e ficam no Kardex.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/62-lotes.webp" data-legenda="Lotes — Cada entrada gera um lote rastreável, com origem e validade."><img src="img/miniaturas/62-lotes.webp" alt="Lotes" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Lotes</strong>Cada entrada gera um lote rastreável, com origem e validade.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/63-rastreio-lote.webp" data-legenda="Rastreio do lote — Da nota fiscal de origem até as ordens e produtos que consumiram o lote."><img src="img/miniaturas/63-rastreio-lote.webp" alt="Rastreio do lote" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Rastreio do lote</strong>Da nota fiscal de origem até as ordens e produtos que consumiram o lote.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/64-kardex.webp" data-legenda="Kardex — Movimentação completa do item: entradas, consumos e ajustes, com saldo a cada passo."><img src="img/miniaturas/64-kardex.webp" alt="Kardex" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Kardex</strong>Movimentação completa do item: entradas, consumos e ajustes, com saldo a cada passo.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/65-origem-saldo.webp" data-legenda="Origem do saldo — Mostra exatamente de quais lotes e notas vem o saldo atual."><img src="img/miniaturas/65-origem-saldo.webp" alt="Origem do saldo" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Origem do saldo</strong>Mostra exatamente de quais lotes e notas vem o saldo atual.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-producao" aria-labelledby="t-producao">
+<h3 id="t-producao">Produção e qualidade</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/53-pedido-venda.webp" data-legenda="Pedido de venda — O pedido do cliente dispara as ordens de produção necessárias."><img src="img/miniaturas/53-pedido-venda.webp" alt="Pedido de venda" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Pedido de venda</strong>O pedido do cliente dispara as ordens de produção necessárias.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/54-kanban.webp" data-legenda="Kanban de produção — Ordens organizadas por etapa; arrastar avança o fluxo com as validações da etapa."><img src="img/miniaturas/54-kanban.webp" alt="Kanban de produção" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Kanban de produção</strong>Ordens organizadas por etapa; arrastar avança o fluxo com as validações da etapa.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/55-op-testes.webp" data-legenda="Ordem em testes — Registro de testes e medições antes da liberação do produto."><img src="img/miniaturas/55-op-testes.webp" alt="Ordem em testes" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ordem em testes</strong>Registro de testes e medições antes da liberação do produto.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/56-op-concluida-custo.webp" data-legenda="Ordem concluída com custo real — Custo apurado de materiais por lote consumido, não por estimativa."><img src="img/miniaturas/56-op-concluida-custo.webp" alt="Ordem concluída com custo real" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Ordem concluída com custo real</strong>Custo apurado de materiais por lote consumido, não por estimativa.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/57-rastreabilidade.webp" data-legenda="Rastreabilidade (as-built) — Ficha do produto com cada componente, lote, fornecedor e nota de origem."><img src="img/miniaturas/57-rastreabilidade.webp" alt="Rastreabilidade (as-built)" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Rastreabilidade (as-built)</strong>Ficha do produto com cada componente, lote, fornecedor e nota de origem.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/58-metrologia.webp" data-legenda="Metrologia — Instrumentos de medição com calibração e vencimentos controlados."><img src="img/miniaturas/58-metrologia.webp" alt="Metrologia" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Metrologia</strong>Instrumentos de medição com calibração e vencimentos controlados.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-documentos" aria-labelledby="t-documentos">
+<h3 id="t-documentos">Documentos e anexos</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/67-midia-peca.webp" data-legenda="Mídia e documentos da peça — Fotos, desenhos e fichas técnicas anexados ao cadastro."><img src="img/miniaturas/67-midia-peca.webp" alt="Mídia e documentos da peça" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Mídia e documentos da peça</strong>Fotos, desenhos e fichas técnicas anexados ao cadastro.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/68-op-documentos.webp" data-legenda="Documentos da ordem — Laudos e registros anexados diretamente à ordem de produção."><img src="img/miniaturas/68-op-documentos.webp" alt="Documentos da ordem" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Documentos da ordem</strong>Laudos e registros anexados diretamente à ordem de produção.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/69-ficha-laudos.webp" data-legenda="Laudos na ficha as-built — Os laudos acompanham a rastreabilidade do produto entregue."><img src="img/miniaturas/69-ficha-laudos.webp" alt="Laudos na ficha as-built" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Laudos na ficha as-built</strong>Os laudos acompanham a rastreabilidade do produto entregue.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/70-fornecedor-documentos.webp" data-legenda="Documentos do fornecedor — Certificados e contratos com data de validade."><img src="img/miniaturas/70-fornecedor-documentos.webp" alt="Documentos do fornecedor" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Documentos do fornecedor</strong>Certificados e contratos com data de validade.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/71-documentos-vencer.webp" data-legenda="Documentos a vencer — Alerta antecipado de tudo que precisa ser renovado."><img src="img/miniaturas/71-documentos-vencer.webp" alt="Documentos a vencer" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Documentos a vencer</strong>Alerta antecipado de tudo que precisa ser renovado.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-paineis" aria-labelledby="t-paineis">
+<h3 id="t-paineis">Painéis e indicadores</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/72-painel-inicial.webp" data-legenda="Painel inicial — Visão do dia: ordens em atraso, compras a receber, notas pendentes e etapas."><img src="img/miniaturas/72-painel-inicial.webp" alt="Painel inicial" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel inicial</strong>Visão do dia: ordens em atraso, compras a receber, notas pendentes e etapas.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/73-painel-compras.webp" data-legenda="Painel de compras — Pedidos em aberto e em atraso, lead time real, recebimento no prazo e atrasos por fornecedor."><img src="img/miniaturas/73-painel-compras.webp" alt="Painel de compras" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel de compras</strong>Pedidos em aberto e em atraso, lead time real, recebimento no prazo e atrasos por fornecedor.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/74-painel-estoque.webp" data-legenda="Painel de recebimento e estoque — Valor em estoque, itens críticos, notas aguardando efetivação e lotes por vencimento."><img src="img/miniaturas/74-painel-estoque.webp" alt="Painel de recebimento e estoque" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel de recebimento e estoque</strong>Valor em estoque, itens críticos, notas aguardando efetivação e lotes por vencimento.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/75-painel-producao.webp" data-legenda="Painel de produção — Ordens por etapa, concluídas por semana, lead time, horas por centro de trabalho e atraso por produto."><img src="img/miniaturas/75-painel-producao.webp" alt="Painel de produção" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel de produção</strong>Ordens por etapa, concluídas por semana, lead time, horas por centro de trabalho e atraso por produto.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/76-painel-vendas.webp" data-legenda="Painel de vendas e expedição — Carteira, pedidos em atraso, entregas no prazo (OTD) e principais clientes."><img src="img/miniaturas/76-painel-vendas.webp" alt="Painel de vendas e expedição" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel de vendas e expedição</strong>Carteira, pedidos em atraso, entregas no prazo (OTD) e principais clientes.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/77-painel-qualidade.webp" data-legenda="Painel de qualidade — Taxa de aprovação, reprovações por produto e metrologia vencida ou a vencer."><img src="img/miniaturas/77-painel-qualidade.webp" alt="Painel de qualidade" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Painel de qualidade</strong>Taxa de aprovação, reprovações por produto e metrologia vencida ou a vencer.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/78-painel-modo-tv.webp" data-legenda="Modo TV — Tela cheia, sem menu, com atualização automática para monitores no chão de fábrica."><img src="img/miniaturas/78-painel-modo-tv.webp" alt="Modo TV" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Modo TV</strong>Tela cheia, sem menu, com atualização automática para monitores no chão de fábrica.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-administracao" aria-labelledby="t-administracao">
+<h3 id="t-administracao">Segurança e administração</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/47-perfis-permissoes.webp" data-legenda="Perfis e permissões — Matriz de perfis com dezenas de permissões granulares por módulo."><img src="img/miniaturas/47-perfis-permissoes.webp" alt="Perfis e permissões" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Perfis e permissões</strong>Matriz de perfis com dezenas de permissões granulares por módulo.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/48-usuarios.webp" data-legenda="Usuários — Cadastro, bloqueio e redefinição de senha com efeito imediato."><img src="img/miniaturas/48-usuarios.webp" alt="Usuários" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Usuários</strong>Cadastro, bloqueio e redefinição de senha com efeito imediato.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/50-permissoes-individuais.webp" data-legenda="Permissões individuais — Exceções por usuário, sempre com justificativa registrada."><img src="img/miniaturas/50-permissoes-individuais.webp" alt="Permissões individuais" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Permissões individuais</strong>Exceções por usuário, sempre com justificativa registrada.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/40-auditoria-lista.webp" data-legenda="Auditoria — Trilha de quem fez o quê e quando, com filtros por tabela, usuário e período."><img src="img/miniaturas/40-auditoria-lista.webp" alt="Auditoria" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Auditoria</strong>Trilha de quem fez o quê e quando, com filtros por tabela, usuário e período.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/41-auditoria-detalhe-diff.webp" data-legenda="Detalhe da alteração — Comparação campo a campo entre o antes e o depois."><img src="img/miniaturas/41-auditoria-detalhe-diff.webp" alt="Detalhe da alteração" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Detalhe da alteração</strong>Comparação campo a campo entre o antes e o depois.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/38-dados-empresa-formulario.webp" data-legenda="Dados da empresa — Razão social, CNPJ, endereço e logo usados em todo o sistema."><img src="img/miniaturas/38-dados-empresa-formulario.webp" alt="Dados da empresa" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Dados da empresa</strong>Razão social, CNPJ, endereço e logo usados em todo o sistema.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/42-parametros-regionais.webp" data-legenda="Parâmetros regionais — Formato de data, número e moeda configuráveis."><img src="img/miniaturas/42-parametros-regionais.webp" alt="Parâmetros regionais" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Parâmetros regionais</strong>Formato de data, número e moeda configuráveis.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/43-cotacoes-formato-iso.webp" data-legenda="Datas no formato ISO — Exemplo do mesmo sistema exibindo datas como AAAA-MM-DD."><img src="img/miniaturas/43-cotacoes-formato-iso.webp" alt="Datas no formato ISO" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Datas no formato ISO</strong>Exemplo do mesmo sistema exibindo datas como AAAA-MM-DD.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/45-parametros-negocio.webp" data-legenda="Parâmetros de negócio — Regras ajustáveis sem alterar código."><img src="img/miniaturas/45-parametros-negocio.webp" alt="Parâmetros de negócio" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Parâmetros de negócio</strong>Regras ajustáveis sem alterar código.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/46-integracoes-smtp.webp" data-legenda="Integrações (e-mail) — Servidor SMTP com senha guardada de forma cifrada."><img src="img/miniaturas/46-integracoes-smtp.webp" alt="Integrações (e-mail)" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Integrações (e-mail)</strong>Servidor SMTP com senha guardada de forma cifrada.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/44-banco-de-dados.webp" data-legenda="Diagnóstico do banco — Tamanho, conexões, versões de migração e backups."><img src="img/miniaturas/44-banco-de-dados.webp" alt="Diagnóstico do banco" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Diagnóstico do banco</strong>Tamanho, conexões, versões de migração e backups.</figcaption>
+</figure>
+</div>
+</section>
+<section class="grupo" id="g-preferencias" aria-labelledby="t-preferencias">
+<h3 id="t-preferencias">Acessibilidade e preferências</h3>
+<div class="grade">
+<figure class="tela">
+  <a href="img/telas/34-preferencias-tema-claro.webp" data-legenda="Tema claro — Visual padrão, limpo e de alto conforto de leitura."><img src="img/miniaturas/34-preferencias-tema-claro.webp" alt="Tema claro" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Tema claro</strong>Visual padrão, limpo e de alto conforto de leitura.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/35-preferencias-tema-escuro.webp" data-legenda="Tema escuro — Para ambientes com pouca luz e longas jornadas."><img src="img/miniaturas/35-preferencias-tema-escuro.webp" alt="Tema escuro" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Tema escuro</strong>Para ambientes com pouca luz e longas jornadas.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/36-preferencias-alto-contraste.webp" data-legenda="Alto contraste — Máxima legibilidade para quem precisa."><img src="img/miniaturas/36-preferencias-alto-contraste.webp" alt="Alto contraste" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Alto contraste</strong>Máxima legibilidade para quem precisa.</figcaption>
+</figure>
+<figure class="tela">
+  <a href="img/telas/37-preferencias-fonte-extra-grande.webp" data-legenda="Fonte extra grande — Tamanho de texto ajustável por usuário."><img src="img/miniaturas/37-preferencias-fonte-extra-grande.webp" alt="Fonte extra grande" loading="lazy" decoding="async" width="640" height="400"></a>
+  <figcaption><strong>Fonte extra grande</strong>Tamanho de texto ajustável por usuário.</figcaption>
+</figure>
+</div>
+</section>
+  </div>
+</section>
+
+<section class="bloco" id="tecnologia" aria-labelledby="t-tec">
+  <div class="conteiner">
+    <p class="sobretitulo">Tecnologia</p>
+    <h2 id="t-tec">Base moderna, sólida e de fácil manutenção</h2>
+    <p class="intro">Arquitetura em camadas, testes automatizados em todos os níveis e implantação reproduzível.</p>
+    <div class="tec">
+      <div><strong>Servidor em Go</strong><span>API rápida e leve, com regras de negócio isoladas em camadas.</span></div>
+      <div><strong>PostgreSQL</strong><span>Banco relacional robusto, com migrações aplicadas automaticamente.</span></div>
+      <div><strong>Interface em React</strong><span>Aplicação web responsiva, acessível e com temas.</span></div>
+      <div><strong>Docker e HTTPS</strong><span>Implantação em qualquer servidor, com certificado automático.</span></div>
+      <div><strong>Testes automatizados</strong><span>Unitários, de integração, de navegador real e de carga.</span></div>
+      <div><strong>Segurança</strong><span>Sessões revogáveis, bloqueio por tentativas, trilha de auditoria e segredos cifrados.</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="conteiner">
+    <div>
+      <a class="marca" href="#inicio"><svg aria-hidden="true"><use href="#logo"/></svg>PCP-Lev</a>
+      <p>Sistema de controle de produção</p>
+    </div>
+    <div>
+      <p>Projeto e desenvolvimento: <strong>Gustavo Frederico Landal</strong></p>
+      <p>E-mail: <a href="mailto:gustavoflandal@gmail.com">gustavoflandal@gmail.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="visor" id="visor" aria-label="Tela ampliada">
+  <div class="controles"><button type="button" class="fechar">Fechar ✕</button></div>
+  <button type="button" class="ant" aria-label="Tela anterior">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button type="button" class="prox" aria-label="Próxima tela">›</button>
+</dialog>
+
+<script src="visor.js"></script>
+</body>
+</html>
